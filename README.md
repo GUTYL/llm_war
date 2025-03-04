@@ -2,6 +2,9 @@
 
 一个用于比较不同 LLM 模型输出的 Web 应用。支持 OpenAI、Anthropic、Google 等主流 LLM 服务。
 
+![./pic/](pic/llm_wars.gif)
+
+
 ## 功能特点
 
 - 支持多个 LLM 模型配置
@@ -22,12 +25,14 @@
 ## 安装步骤
 
 1. 克隆项目
+
 ```bash
 git clone https://github.com/GUTYL/llm_war.git
 cd llm_war
 ```
 
 2. 安装后端依赖
+
 ```bash
 # 创建虚拟环境
 python -m venv venv
@@ -43,6 +48,7 @@ pip install -r requirements.txt
 ```
 
 3. 安装前端依赖
+
 ```bash
 cd frontend
 npm install
@@ -50,13 +56,37 @@ npm install
 
 ## 运行项目
 
+### 方式一：一键运行（推荐）
+
+Windows 系统：
+
+```bash
+# 双击运行 start.bat
+# 或在命令行中运行
+.\start.bat
+```
+
+Unix/Linux/Mac 系统：
+
+```bash
+# 添加执行权限
+chmod +x start.sh
+
+# 运行脚本
+./start.sh
+```
+
+### 方式二：手动运行
+
 1. 启动后端服务
+
 ```bash
 # 在项目根目录下
 python app.py
 ```
 
 2. 启动前端开发服务器
+
 ```bash
 # 在 frontend 目录下
 npm start
@@ -88,14 +118,6 @@ npm start
 - 请妥善保管 API 密钥，不要将其提交到代码仓库
 - 建议使用环境变量或配置文件存储敏感信息
 - 确保网络环境能够访问各个 LLM 服务
-
-## 技术栈
-
-- 后端：Python Flask
-- 前端：React + Material-UI
-- 状态管理：React Hooks
-- HTTP 客户端：Axios
-- 样式：Material-UI + Emotion
 
 ## 贡献指南
 
