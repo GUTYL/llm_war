@@ -23,7 +23,7 @@
 
 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/llm_war.git
+git clone https://github.com/GUTYL/llm_war.git
 cd llm_war
 ```
 
@@ -48,19 +48,12 @@ cd frontend
 npm install
 ```
 
-4. 配置环境变量
-创建 `.env` 文件并添加必要的环境变量：
-```env
-FLASK_APP=app.py
-FLASK_ENV=development
-```
-
 ## 运行项目
 
 1. 启动后端服务
 ```bash
 # 在项目根目录下
-flask run
+python app.py
 ```
 
 2. 启动前端开发服务器
@@ -70,7 +63,7 @@ npm start
 ```
 
 3. 访问应用
-打开浏览器访问 `http://localhost:3000`
+   打开浏览器访问 `http://localhost:3000`
 
 ## 使用说明
 
@@ -78,17 +71,14 @@ npm start
    - 点击"添加模型"按钮
    - 填写模型配置信息（名称、提供商、API密钥等）
    - 点击保存
-
 2. 发送查询
    - 在提示词设置区域输入系统提示词（可选）和用户提示词
    - 点击"发送查询"按钮
    - 等待所有模型返回结果
-
 3. 查看结果
    - 结果会以卡片形式显示
    - 可以点击展开/折叠查看详细内容
    - 支持全屏查看单个结果
-
 4. 管理配置
    - 可以复制、编辑或删除已有的模型配置
    - 配置会自动保存到本地
@@ -113,4 +103,4 @@ npm start
 
 ## 许可证
 
-MIT License 
+MIT License
